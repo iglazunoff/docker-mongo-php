@@ -170,19 +170,17 @@ sync-prod:
 	@git merge/origin-$(GIT_BRANCH_PROD)
 
 dev:
-	@make stop
+	@make restart
 	@make pull-dev
 	@make npm-i
-	@make composer-install
+	@make composer
 	@make npm-dev
-	@make start
 	@make ps
 
 deploy:
-	@make stop
+	@make restart
 	@make pull-prod
 	@make npm-i
-	@make composer-install
+	@make composer
 	@make npm-build
-	@make start
 	@make ps
