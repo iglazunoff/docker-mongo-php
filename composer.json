@@ -1,0 +1,59 @@
+{
+    "name": "iglazunoff/docker-mongo-php",
+    "version": "1.0.0",
+    "type": "project",
+    "description": "Starter kit for frontend of PHP applications",
+    "license": ["MIT"],
+    "homepage": "https://github.com/iglazunoff/docker-mongo-php",
+    "keywords": [
+        "php",
+        "php-8.2",
+        "mongodb",
+        "redis",
+        "nginx"
+    ],
+    "time": "2023-03-12",
+    "authors": [
+        {
+            "name": "Glazunov Ilia",
+            "email": "iglazunoff39@gmail.com",
+            "homepage": "https://github.com/iglazunoff",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-bcmath": "*",
+        "ext-exif": "*",
+        "ext-fileinfo": "*",
+        "ext-gd": "*",
+        "ext-imagick": "*",
+        "ext-json": "*",
+        "ext-mongodb": "^1.15.0",
+        "ext-redis": "*",
+        "ext-sockets": "*",
+        "ext-xdebug": "*",
+        "ext-yaml": "*",
+        "ext-zip": "*",
+        "ext-zstd": "*",
+        "guzzlehttp/guzzle": "^7.5",
+        "mongodb/mongodb": "^1.15",
+        "monolog/monolog": "^3.3",
+        "nesbot/carbon": "^2.66",
+        "psr/cache": "^3.0",
+        "psr/clock": "^1.0",
+        "psr/container": "^2.0",
+        "psr/log": "^3.0",
+        "psr/simple-cache": "^3.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
