@@ -1,6 +1,31 @@
-composer.phar
-/vendor/
+# Application
+public/dist
+public/hot
 
-# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# composer.lock
+# PHP
+composer.phar
+vendor
+composer.lock
+
+# IDE
+.fleet
+.idea
+.vscode
+
+# Environments
+.env
+.env.*
+!.env.*.example
+!.env.example
+
+# Node
+node_modules
+package-lock.json
+
+# Data
+*.log
+*.composerLog
+log
+*.lock.*
+*.pem
+!docker/nginx/ssl/ssl.pem
