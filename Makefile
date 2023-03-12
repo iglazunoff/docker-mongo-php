@@ -42,7 +42,7 @@ help:
 	@echo "$(GREEN_B)up$(NC)................$(ORANGE)Up docker containers$(NC)"
 	@echo "$(GREEN_B)stop$(NC)..............$(ORANGE)Stop docker containers$(NC)"
 	@echo "$(GREEN_B)down$(NC)..............$(ORANGE)Down docker containers$(NC)"
-	@echo "$(GREEN_B)down-all$(NC)..........$(ORANGE)Down docker containers with volumes and imaages$(NC)"
+	@echo "$(GREEN_B)down-all$(NC)..........$(ORANGE)Down docker containers with volumes and images$(NC)"
 	@echo "$(GREEN_B)restart$(NC)...........$(ORANGE)Restart docker containers$(NC)"
 	@echo "$(GREEN_B)reload$(NC)............$(ORANGE)Reload docker containers$(NC)"
 	@echo "$(GREEN_B)ps$(NC)................$(ORANGE)Show docker containers$(NC)"
