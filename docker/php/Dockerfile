@@ -1,4 +1,4 @@
-FROM php:8.2.3-fpm as php_base
+FROM php:8.2.4-fpm as php_base
 
 WORKDIR /var/www/html
 
@@ -31,7 +31,8 @@ RUN docker-php-ext-configure gd --with-freetype --with-jpeg
 RUN docker-php-ext-install \
     gd \
     bcmath \
-    exif
+    exif \
+    sockets
 
 RUN docker-php-ext-enable \
     redis \
@@ -42,7 +43,8 @@ RUN docker-php-ext-enable \
     bcmath \
     exif \
     zip \
-    yaml
+    yaml \
+    sockets
 
 RUN chown -R www-data:www-data /var/www/
 
@@ -51,9 +53,6 @@ EXPOSE 9000
 # For PHP container with application
 FROM php_base as php_app
 ARG NODE_VERSION=18
-
-RUN docker-php-ext-install sockets
-RUN docker-php-ext-enable sockets
 
 RUN curl -sS https://getcomposer.org/installer  \
     | php -- --install-dir=/usr/local/bin --filename=composer

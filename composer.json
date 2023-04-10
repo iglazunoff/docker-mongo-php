@@ -2,7 +2,7 @@
     "name": "iglazunoff/docker-mongo-php",
     "version": "1.0.0",
     "type": "project",
-    "description": "Starter kit for frontend of PHP applications",
+    "description": "Basic PHP relations for building backend applications",
     "license": ["MIT"],
     "homepage": "https://github.com/iglazunoff/docker-mongo-php",
     "keywords": [
