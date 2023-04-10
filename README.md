@@ -91,7 +91,7 @@ docker network create \
 docker-compose build --no-cache
 docker-compose up -d
 docker exec -it "$(PROJECT_NAME)-php" composer install
-@docker exec -it "$(PROJECT_NAME)-php" npm install
+docker exec -it "$(PROJECT_NAME)-php" npm install
 ```
 
 ## Nice!
