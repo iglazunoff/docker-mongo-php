@@ -1,8 +1,14 @@
 version: '3.9'
 
+networks:
+  app-network:
+    name: app-network
+    driver: bridge
+    external: true
+
 services:
   mongo:
-    image: mongo:6.0.4
+    image: mongo:6.0.5
     container_name: app-mongo
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${MONGODB_ROOT_USERNAME}
@@ -100,12 +106,6 @@ services:
       - $PWD/:/var/www/html/
     depends_on:
       - php
-
-networks:
-  app-network:
-    name: app-network
-    driver: bridge
-    external: true
 
 volumes:
   app-mongo_db:
