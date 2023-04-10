@@ -8,9 +8,9 @@ Starter kit for projects with MongoDB, PHP and Redis.
 ## Introduction
 ### Containers
 This starter kit includes the following containers and configurations for them:
-- **PHP** (8.2.3 fpm)
+- **PHP** (8.2.4 fpm)
 - **Redis** (alpine)
-- **MongoDB** (6.0.4)
+- **MongoDB** (6.0.5)
 - **Supervisor** (based on PHP container)
 - **Nginx** like web-server
 
